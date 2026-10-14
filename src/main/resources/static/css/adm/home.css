@@ -635,6 +635,72 @@
    DARK MODE - DASHBOARD
 ========================================================= */
 
+/* =========================================
+   CORREÇÃO RESPONSIVA - DASHBOARD ADMIN
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Limita o conteúdo ao espaço restante da tela */
+    .main {
+        width: calc(100% - 65px);
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .content {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        padding: 16px 12px;
+        box-sizing: border-box;
+    }
+
+    /* Cards e painéis em uma única coluna */
+    .dashboard-cards,
+    .dashboard-grid {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Impede os painéis de ultrapassarem o conteúdo */
+    .dashboard-panel,
+    .dashboard-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Gráfico: rolagem somente na área dos meses */
+    .chart-container {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    .chart-bars {
+        min-width: 420px;
+    }
+
+    /* Resumo */
+    .summary-list {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 12px;
+        box-sizing: border-box;
+    }
+
+    .summary-item {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
+
 
 /* =========================================================
    CABEÇALHO
